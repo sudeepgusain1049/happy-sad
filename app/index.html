@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Sad</title>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="tab">
+        <div class="brand">
+            <a href="#">    
+            <img class="navbar-logo" src="./public/img/logo.png">
+        </a>
+        </div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+        <div id="menu-content" class="menu-content collapse out">
+            <button id="LineChart" burl="/#/PreviousStackGraph?_k=5qexiw" class="tablinks collapsed" onclick="openCity(this)">Previous Day Analytics</button>
+            <button class="tablinks collapsed" burl="/#/Graph?_k=5qexiw" onclick="openCity(this)">Historical Data Analytics</button>
+            <button class="tablinks collapsed" burl="/#/ManageOptions" onclick="openCity(this)">Manage Options</button>
+        </div>
+
+    </div>
+    <div id="London" class="tabcontent">
+        <div id="tooltip" class="nvtooltip"></div>
+        <div id="root"></div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src='http://d3js.org/d3.v2.js'></script>
+<script src="Js/d3legend.js"></script>
+<script src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<script src="Js/common.js"></script>
+<script src="./bundle.js"></script>
+
+</html>
